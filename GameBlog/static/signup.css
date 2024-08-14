@@ -1,0 +1,139 @@
+body{
+    background-color:  #151515;
+    color: #ffffff;  
+    display: flex;
+    overflow: hidden;
+    padding-left: 50px;
+}
+ .h1{
+    font-size: 140px;
+    font-family: "Smooch Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 0;
+  margin-top: -40px;
+    padding-bottom: 0;
+ }
+
+ p{
+   font-family: "Poppins", sans-serif;
+   font-size: 20px;
+   font-weight:400;
+   font-style: normal;
+   margin-top: -10px;
+   padding: 0;
+   color: rgb(255, 255, 255);
+ 
+ }
+ .form{
+    margin-top: 5%;
+    margin-left: 3%;
+ }
+ .form-control form-control-lg{
+    width: 0px;
+ }
+
+ .form-control.form-control-lg {
+   color: #FFFFFF; 
+   border: none; 
+   border-bottom: 2px solid #FFFFFF; 
+   background-color: transparent; 
+}
+.form-control.form-control-lg::placeholder {
+   color: #FFFFFF; /* Change placeholder text color to white */
+}
+
+.alig{
+   display: flex;
+   color: #FFFFFF;
+   
+ font-weight: 300;
+ font-size: 20px;
+}
+.alig{
+   font-size: 1rem;
+   font-family: "Poppins", sans-serif;
+   display: grid;
+   grid-template-columns: 0.2fr max-content 0.5fr;
+   grid-column-gap: 1.0rem;
+   align-items: center;
+}
+.alig::before,
+.alig::after {
+   content: "";
+   display: block;
+   height: 1px;
+   width: 180px;
+   margin-left: 10px;
+   background-color: currentColor;
+}
+
+.container{
+   display: flex;
+   column-gap: 0;
+   row-gap: 0;
+}
+
+.links {
+   text-align: center;
+   margin-left: 50px;
+}
+
+.links button {
+   width: 400px;
+   background-color: transparent;
+   color: rgb(255, 255, 255);
+   border: 2px solid white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.main{
+   z-index: 1;
+   height: 590px;
+   margin-top: 15px;
+   margin-right: 60px;
+}
+.notmain{
+   z-index: 0;
+   height: 590px;
+   margin-top: 15px;
+   margin-right: 60px;
+}
+.image-container {
+   position: relative;
+   width: 100%; /* Ensure the container takes the full width */
+   max-width: 600px; /* Adjust max width based on your needs */
+   margin: 0 auto; /* Center the container horizontally */
+}
+
+.image-container img {
+   width: 100%; /* Make images take the full width of the container */
+   height: auto; /* Maintain aspect ratio */
+}
+
+.image-container .main {
+   position: absolute;
+   top: 15px;
+   right: 60px;
+   z-index: 1;
+   height: 650px;
+   width: 600px;
+}
+
+.image-container .notmain {
+   position: relative;
+   z-index: 0;
+   height: 1000px;
+   width: 1200px;
+   top: -100px;
+   right: 400px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 700px) {
+   .image-container {
+       max-width: 100%; /* Ensure full width on smaller screens */
+   }
+}
