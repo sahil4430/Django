@@ -6,3 +6,4 @@ def tryview(request):
 def homeview(request):
     posts = Post.objects.all()
     return render(request, "home.html", {'posts': posts})
+
